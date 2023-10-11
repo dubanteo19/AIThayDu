@@ -1,4 +1,4 @@
-package chapter2.agent_AB; 
+package chapter2.agent_AB;
 
 public class Environment {
 	public static final Action MOVE_LEFT = new DynamicAction("LEFT");
@@ -21,7 +21,7 @@ public class Environment {
 
 	// add an agent into the enviroment
 	public void addAgent(Agent agent, String location) {
-		this.agent=agent;
+		this.agent = agent;
 		this.envState.setAgentLocation(location);
 	}
 
@@ -31,12 +31,11 @@ public class Environment {
 
 	// Update enviroment state when agent do an action
 	public EnvironmentState executeAction(Action action) {
-		if(action.equals(SUCK_DIRT))
+		if (action.equals(SUCK_DIRT))
 			this.envState.setLocationState(envState.getAgentLocation(), LocationState.CLEAN);
-		else if(action.equals(MOVE_LEFT)) {
+		else if (action.equals(MOVE_LEFT)) {
 			this.envState.setAgentLocation(LOCATION_A);
-		}
-		else if(action.equals(MOVE_RIGHT)) {
+		} else if (action.equals(MOVE_RIGHT)) {
 			this.envState.setAgentLocation(LOCATION_B);
 		}
 		return envState;

@@ -1,4 +1,4 @@
-package chapter2.agent_AB;
+package chapter2_task2.agent_AB;
 
 public class DynamicAction extends Action {
 	private String name;
@@ -11,6 +11,7 @@ public class DynamicAction extends Action {
 	public boolean isNoOp() {
 		return false;
 	}
+
 	@Override
 	public String toString() {
 		return this.name;

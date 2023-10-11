@@ -1,4 +1,4 @@
-package chapter2.agent_AB; 
+package chapter2.agent_AB;
 
 import java.util.HashMap;
 import java.util.Map;
